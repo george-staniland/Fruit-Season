@@ -1,0 +1,18 @@
+import React from 'react'
+
+class Home extends React.Component {
+  state = {
+    
+  }
+  render() {
+    return (
+      <div className="home box">
+        <h2>header</h2>
+        <p>stuff</p>
+      </div>
+    )
+  }
+
+}
+
+export default Home
