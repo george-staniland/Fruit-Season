@@ -6,7 +6,7 @@ class Ground extends React.Component {
   }
   render() {
     return (
-      <div className="ground">
+      <div className="ground" id="bottom">
         <div className="grass"></div>
 
       </div>
