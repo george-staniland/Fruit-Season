@@ -7,7 +7,7 @@ class Apple extends React.Component {
   state = {
     level: 0,
     y: -(Math.floor(Math.random()*screen.height)),
-    x: Math.floor(Math.random()*screen.width),
+    x: Math.floor(Math.random()*(screen.width - 100)),
     style: {
       top: "-100px",
       left: "0px"
@@ -17,12 +17,20 @@ class Apple extends React.Component {
 
   componentDidMount() {
     this.interval = setInterval(() => { 
-      this.setState({
-        style : {
-            ...this.state.style, top: this.state.y, left: this.state.x
-        },
-        y: this.state.y + 5
-      }) 
+      if(this.state.y < (window.innerHeight - document.getElementById("bottom").clientHeight)) {
+       
+        this.setState({
+          style : {
+              ...this.state.style, top: this.state.y, left: this.state.x
+          },
+          y: this.state.y + 5
+        }) 
+      
+      }
+      else {
+        setTimeout(this.rottEvent, 1000);
+      }
+    
      }, 40);
   }
   componentWillUnmount() {
@@ -34,6 +42,12 @@ class Apple extends React.Component {
      x: Math.floor(Math.random()*screen.width),
      y: -100
     })
+  }
+  rottEvent = (e) => {
+    this.setState({
+      x: Math.floor(Math.random()*screen.width),
+      y: -100
+     })
   }
 
   render() {
