@@ -11,7 +11,8 @@ const App = () => {
   return (
     <>
       <Router>
-        <Route path="/home" component={Home} />
+        {/* Change home comp to render here */}
+        <Home />
         <Route path="/game" component={Game} />
         <Ground />
         {/* <Route path="/game" component={Game} /> */}
