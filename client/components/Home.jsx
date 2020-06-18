@@ -7,11 +7,11 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div className="home box">
+      <div className="sky">
 
-        <h2>HOME PAGE</h2>
-        <p>stuff</p>
-        <Link to="game">PLAY</Link>
+        <div className="playbut center animate__animated animate__backInDown">
+          <Link to="game" className="playlink">PLAY</Link>
+        </div>
       </div>
     )
   }

@@ -6,9 +6,8 @@ class Game extends React.Component {
   }
   render() {
     return (
-      <div className="home box">
-        <h2>GAME PAGE</h2>
-        <p>stuff</p>
+      <div className="sky">
+
       </div>
     )
   }
