@@ -17,7 +17,14 @@ const App = () => {
         {/* <Route path="/game" component={Game} /> */}
       </Router>
     </>
+    
+    
   )
 }
 
+
+
 export default App
+
+
+
