@@ -17,7 +17,10 @@ class Game extends React.Component {
           <Link to="Home" className="playlink">Home</Link>
 
         </div>
-        <Apple />
+        {
+        Array.from({length: 10}, (item, i) => <Apple key={i}/>)
+        }
+       
 
       </div>
     )
