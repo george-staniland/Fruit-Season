@@ -16,7 +16,6 @@ class Apple extends React.Component {
 
 
   componentDidMount() {
-    console.log("Spawned apple")
     this.interval = setInterval(() => { 
       this.setState({
         style : {
@@ -31,7 +30,6 @@ class Apple extends React.Component {
   }
 
   colectEvent = (e) => {
-    console.log("hover!")
     this.setState({
      x: Math.floor(Math.random()*screen.width),
      y: -100
