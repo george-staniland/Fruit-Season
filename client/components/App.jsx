@@ -4,15 +4,16 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom'
 //components
 import Home from "./Home"
 import Game from "./Game"
+import Ground from "./Ground"
 
 
 const App = () => {
   return (
     <>
       <Router>
-        <h1>APP</h1>
         <Route path="/home" component={Home} />
         <Route path="/game" component={Game} />
+        <Ground />
         {/* <Route path="/game" component={Game} /> */}
       </Router>
     </>
