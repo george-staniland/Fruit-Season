@@ -6,7 +6,7 @@ let theobj = "none"
 class Apple extends React.Component {
   state = {
     level: 0,
-    y: -100,
+    y: -(Math.floor(Math.random()*screen.height)),
     x: Math.floor(Math.random()*screen.width),
     style: {
       top: "-100px",
