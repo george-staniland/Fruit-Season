@@ -12,7 +12,7 @@ const App = () => {
     <>
       <Router>
         {/* Change home comp to render here */}
-        <Home />
+        <Route  path="/home" component={Home}/>
         <Route path="/game" component={Game} />
         <Ground />
         {/* <Route path="/game" component={Game} /> */}
