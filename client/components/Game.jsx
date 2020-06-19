@@ -38,7 +38,7 @@ class Game extends React.Component {
 
         </div>
         
-      <div className="board">{this.state.score}</div>
+      <div className="board animate__animated animate__bounceInDown">{this.state.score}</div>
         {
         Array.from({length: 10}, (item, i) => <Apple key={i} addscore={this.updateScore}/>)
         }
