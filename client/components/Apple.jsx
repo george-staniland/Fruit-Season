@@ -17,6 +17,9 @@ class Apple extends React.Component {
 
   componentDidMount() {
     this.interval = setInterval(() => { 
+      // *For throwDataAround in Game*
+      // console.log(this.props.throwThisDataLast)
+
       if(this.state.y < (window.innerHeight - document.getElementById("bottom").clientHeight)) {
        
         this.setState({

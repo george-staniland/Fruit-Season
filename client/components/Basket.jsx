@@ -4,6 +4,16 @@ class Basket extends React.Component {
     state = {
       style: {}
     }
+    // *For throwDataAround in Game*
+    // componentDidMount() {
+    //   this.props.throwDataAround('yo')
+    // }
+
+    componentDidMount(){
+      this.props.getBasketDimensions()
+    }
+
+    // *other stuff to ponder on*
 
     // componentDidUpdate(prevprops){
     //   console.log(this.props)
@@ -23,7 +33,9 @@ class Basket extends React.Component {
         return (
           <div className="basket" style={{
             top: this.props.y + 5,
-            left: this.props.x - 45}}></div>
+            left: this.props.x - 45
+          }}
+          ></div>
         )
     }
     }

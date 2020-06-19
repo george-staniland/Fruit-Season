@@ -18,6 +18,23 @@ class Game extends React.Component {
     })
     // console.log('move', e.movementX)
   }
+  
+  // *How to do this if I (Richard) need it :/
+  // throwDataAround = (arg) => {
+  //   console.log(arg)
+  //   this.setState({
+  //     passThis: arg
+  //   })
+  // }
+  
+  // *Put in render>return
+  // |
+  // V
+  // <Basket throwDataAround={this.throwDataAround}/>
+  
+  // *and so on.
+  // <Apple throwThisDataLast={this.state.passThis}/>
+
   render() {
     return (
       <div className="sky" onMouseMove={this.getMousePos}>
