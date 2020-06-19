@@ -67,6 +67,13 @@ body {
   background-color: blue;
   
 }
+.basket {
+  background-image: url(./images/player/basket.png);
+  height:100px;
+  width:100px;
+  position: absolute;
+  background-size: 100px;
+}
 
 .gameTitle {
   color: forestgreen;
