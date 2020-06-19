@@ -2,12 +2,18 @@ body {
   background-color:cornflowerblue;
   margin: 0px;
   overflow: hidden;
+  font-family: 'Suez One', serif;
 }
 .sky {
   background-color: cornflowerblue;
   height: 80vh;
   width: 100%;
+  background-image: url(./images/terrain/tree.png);
+  background-position: -200px -220px;
+  background-size: 40% 130% ;
+  background-repeat: repeat-x;
 }
+
 .grass {
   background-color: forestgreen;
   height: 2vh;
@@ -37,7 +43,7 @@ body {
   height: 7vh;
   font-size: 50px;
   left: 40%;
-  margin-top: 200px;
+  margin-top: 31.5%;
 }
 .button:hover {
   background-color: greenyellow;
@@ -49,6 +55,7 @@ body {
 .fruit {
   /* background-color: red; */
   background-image: url(./images/fruit/apple.png);
+  background-size: cover;
   width: 2vw;
   height: 2vw;
   top: 0px;
@@ -58,5 +65,17 @@ body {
 }
 .fruit:hover {
   background-color: blue;
+  
+}
+
+.gameTitle {
+  color: forestgreen;
+  width: 30vh;
+  height: 12vh;
+  text-align: center;
+  position: fixed;
+  top: 30px;
+  left: 45%;
+  color: black;
   
 }
