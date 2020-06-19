@@ -9,10 +9,6 @@ class Basket extends React.Component {
     //   this.props.throwDataAround('yo')
     // }
 
-    componentDidMount(){
-      this.props.getBasketDimensions()
-    }
-
     // *other stuff to ponder on*
 
     // componentDidUpdate(prevprops){
