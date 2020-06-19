@@ -55,13 +55,14 @@ body {
 .fruit {
   /* background-color: red; */
   background-image: url(./images/fruit/apple.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 2vw;
   height: 2vw;
   top: 0px;
   left: 400px;
   position: absolute;
-  background-size: 2vw;
+
 }
 .fruit:hover {
   background-image: url(./images/fruit/explosion.png);
