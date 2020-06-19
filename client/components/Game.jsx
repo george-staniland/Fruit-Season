@@ -6,10 +6,19 @@ import Apple from "./Apple"
 
 class Game extends React.Component {
   state = {
-    maxfruit: 20
-
+    maxfruit: 20,
+    score: 0
   }
+
+  updateScore = () => {
+    console.log("updated score!", this.state.score)
+    this.setState({
+      score: this.state.score + 1
+    })
+  }
+  
   render() {
+    
     return (
       <div className="sky">
 
@@ -17,8 +26,10 @@ class Game extends React.Component {
           <Link to="Home" className="playlink">Home</Link>
 
         </div>
+        
+      <div className="board">{this.state.score}</div>
         {
-        Array.from({length: 10}, (item, i) => <Apple key={i}/>)
+        Array.from({length: 10}, (item, i) => <Apple key={i} addscore={this.updateScore}/>)
         }
        
 
