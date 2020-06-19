@@ -74,8 +74,14 @@ body {
   height: 12vh;
   text-align: center;
   position: fixed;
-  top: 30px;
-  left: 45%;
-  color: black;
+  top: 21%;
+    left: 41%;
+    color: white;
+    letter-spacing: 4px;
+    font-stretch: normal;
+  
+  font-size: 2.5em ;
   
 }
+
+
