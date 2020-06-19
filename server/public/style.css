@@ -64,8 +64,10 @@ body {
   background-size: 2vw;
 }
 .fruit:hover {
-  background-color: blue;
-  
+  background-image: url(./images/fruit/explosion.png);
+  width: 6vw;
+  height: 6vw;
+  background-size: 6vw;
 }
 .basket {
   background-image: url(./images/player/basket.png);
