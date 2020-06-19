@@ -38,6 +38,7 @@ class Apple extends React.Component {
   }
 
   colectEvent = (e) => {
+    this.props.addscore()
     this.setState({
      x: Math.floor(Math.random()*screen.width),
      y: -100
