@@ -7,6 +7,15 @@ import Basket from "./Basket"
 
 class Game extends React.Component {
   state = {
+    maxfruit: 20,
+    score: 0
+  }
+
+  updateScore = () => {
+    console.log("updated score!", this.state.score)
+    this.setState({
+      score: this.state.score + 1
+    })
     maxfruit: 20
   }
   getMousePos = (e) => {
@@ -18,7 +27,9 @@ class Game extends React.Component {
     })
     // console.log('move', e.movementX)
   }
+  
   render() {
+    
     return (
       <div className="sky" onMouseMove={this.getMousePos}>
 
@@ -26,8 +37,10 @@ class Game extends React.Component {
           <Link to="Home" className="playlink">Home</Link>
 
         </div>
+        
+      <div className="board animate__animated animate__bounceInDown">{this.state.score}</div>
         {
-        Array.from({length: 10}, (item, i) => <Apple key={i}/>)
+        Array.from({length: 10}, (item, i) => <Apple key={i} addscore={this.updateScore}/>)
         }
         <Basket x={this.state.x} y={this.state.y}/>
 
