@@ -9,7 +9,12 @@ class Home extends React.Component {
     return (
       <div className="sky">
 
-        <div className="play button center animate__animated animate__backInDown">
+        <div className="gameTitle">
+        <h1>Fruit Season!</h1>
+        </div>
+        
+        
+        <div className="play button animate__animated animate__backInDown">
           <Link to="game" className="playlink">PLAY</Link>
         </div>
       </div>
