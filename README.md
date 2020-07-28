@@ -1,5 +1,5 @@
-Fruit Season Game
+### Fruit Season Game
+#### By George, Richard & Rubin
 
-By G, R & R
-
+##### Excuse the terrible load speeds of non-premimum Heroku
 https://fruit-season.herokuapp.com/#/
